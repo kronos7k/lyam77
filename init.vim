@@ -50,8 +50,8 @@ Plug 'honza/vim-snippets'
 Plug 'metakirby5/codi.vim'
 Plug 'dkarter/bullets.vim'
 
-" Entertainment
-"Plug 'ryanss/vim-hackernews'
+" Entertainment"
+Plug 'ryanss/vim-hackernews'
 
 call plug#end()
 
