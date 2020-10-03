@@ -1,4 +1,4 @@
-""" Lyam77 Neovim Init.vim
+"" Lyam77 Neovim Init.vim
 
 """ Vim-Plug
 call plug#begin()
@@ -50,17 +50,15 @@ Plug 'honza/vim-snippets'
 Plug 'metakirby5/codi.vim'
 Plug 'dkarter/bullets.vim'
 
-" Entertainment"
-Plug 'ryanss/vim-hackernews'
+" Entertainment "
 
 call plug#end()
 
-""" Python3 VirtualEnv
-let g:python3_host_prog = expand('~/.config/nvim/env/bin/python')
-
+" Python3 VirtualEnv
+let g:python3_host_prog = expand('~/.config/nvim/env/bin/python3')
 """ Coloring
 syntax on
-color dracula
+color gruvbox
 highlight Pmenu guibg=white guifg=black gui=bold
 highlight Comment gui=bold
 highlight Normal gui=none
@@ -155,7 +153,7 @@ let g:fzf_colors =
 
 """ Filetype-Specific Configurations
 
-" HTML, XML, Jinja
+" HTML XML, Jinja
 autocmd FileType html setlocal shitwidth=2 tabstop=2 softtabstop=2
 autocmd FileType css setlocalshiftwidth=2 tabstop=2 softtabstop=2
 autocmd FileType xml setlocal shiftwidth=2 tabstop=2 softtabstop=2
@@ -211,7 +209,6 @@ endfunction
 
 let mapleader=","
 nmap <leader>q :NERDTreeToggle<CR>
-nmap \ <leader>q
 nmap <leader>w :TagbarToggle<CR>
 nmap <leader>ee :Colors<CR>
 nmap <leader>ea :AirlineTheme 
